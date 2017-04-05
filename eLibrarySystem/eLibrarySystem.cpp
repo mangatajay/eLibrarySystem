@@ -3,9 +3,11 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <conio.h>
 
 int main()
 {
+	cout << "HEREEE WEEEE GOOOO !!" << endl;
     return 0;
 }
 
