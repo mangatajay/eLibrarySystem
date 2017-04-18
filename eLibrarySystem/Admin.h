@@ -1,16 +1,12 @@
 #ifndef ADMIN_H
 #define ADMIN_H
 
-#include <string>
-#include <vector>
-#include <iostream>
-
 #include "Person.h"
-#include "Student.h"
 
-class Admin : public Person, public Student
+class Admin : public Person
 {
 public:
+	void Menu();
 	void IssueBooks();
 
 	void SetPenalty();

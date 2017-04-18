@@ -1,14 +1,10 @@
 #ifndef TEACHER_H
 #define TEACHER_H
 
-#include <string>
-#include <vector>
-#include <iostream>
-
 #include "Person.h"
-#include "Student.h"
 
-class Teacher : public Person, public Student
+
+class Teacher : public Person
 {
 public:
 	int GetDiscount();

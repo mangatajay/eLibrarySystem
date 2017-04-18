@@ -18,6 +18,15 @@ protected:
 	string Password;
 
 	static int PersonID;
+	int numberOfPurchase;
+	int numberOfRents;
+public:
 
+	void BuyBooks();
+	void RentBooks();
+	void ReturnBooks();
+	void inputData(void);
+	void Menu();
+	void outputData(void);
 };
 #endif
