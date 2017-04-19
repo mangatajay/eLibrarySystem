@@ -1,13 +1,9 @@
-﻿  Teacher.cpp
-c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\teacher.cpp(14): error C2509: 'Menu': member function not declared in 'Teacher'
-  c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\teacher.h(7): note: see declaration of 'Teacher'
+﻿cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
+  Admin.cpp
+  Person.cpp
   Student.cpp
-c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.cpp(8): error C2509: 'Menu': member function not declared in 'Student'
-  c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.h(7): note: see declaration of 'Student'
-c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.cpp(20): error C2509: 'BuyBooks': member function not declared in 'Student'
-  c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.h(7): note: see declaration of 'Student'
-c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.cpp(25): error C2509: 'RentBooks': member function not declared in 'Student'
-  c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.h(7): note: see declaration of 'Student'
-c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.cpp(29): error C2509: 'ReturnBooks': member function not declared in 'Student'
-  c:\users\sagar\documents\github\elibrarysystem\elibrarysystem\student.h(7): note: see declaration of 'Student'
+  Teacher.cpp
+  eLibrarySystem.cpp
   Generating Code...
+  eLibrarySystem.vcxproj -> C:\Users\Ajay Mangat\Documents\GitHub\eLibrarySystem\x64\Debug\eLibrarySystem.exe
+  eLibrarySystem.vcxproj -> C:\Users\Ajay Mangat\Documents\GitHub\eLibrarySystem\x64\Debug\eLibrarySystem.pdb (Full PDB)

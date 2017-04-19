@@ -1,17 +1,14 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-
 #include "Person.h"
 
 class Admin : public Person
 {
+private:
+	char showMenu();
 public:
-	void Menu();
-	void IssueBooks();
-
-	void SetPenalty();
-
-	void GiveDiscount();
-
+	Admin(string uName, string password);
+	string getUName();
+	string getPassword();
 };
 #endif

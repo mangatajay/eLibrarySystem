@@ -4,59 +4,31 @@
 
 #include "Person.h"
 
-int Person::PersonID;
-
-void Person::BuyBooks()
+Person::Person(string fName, string lName, int lLogin, int vCount, string email, int id)
 {
-	cout << "This Is For Buying a Book " << endl;
+	firstName = fName;
+	lastName = lName;
+	//password = pass;
+	//userName = uName;
+	lastLogin = lLogin;
+	visitCount = vCount;
+	eMail = email;
+	ID = id;
 }
 
-void Person::RentBooks()
+Person::Person(string uName, string pass)
 {
-	cout << "This is To Rent A Book " << endl;
+	firstName = "admin";
+	lastName = "admin";
+	password = pass;
+	userName = uName;
+	lastLogin = 0;
+	visitCount = 0;
+	eMail = "admin@admin.com";
+	ID = 007;
 }
 
-void Person::ReturnBooks()
+string Person::createPassword()
 {
-	cout << "This Is To Return A Book" << endl;
-
+	return firstName + lastName + "123";
 }
-
-void Person::inputData(void)
-{
-	cout << "Enter Your First name" << endl;
-	getline(cin, FirstName);
-	cout << "Enter Your Last Name " << endl;
-	getline(cin, LastName);
-	cout << "Enter Your email-ID" << endl;
-	getline(cin, Email);
-	cout << "Enter Your Password " << endl;
-	getline(cin, Password);
-	PersonID++;
-
-}
-
-void Person::Menu()
-{
-	
-}
-
-void Person::outputData(void)
-{
-	cout << "First Name Is " << FirstName << endl;
-	cout << "Last Name is " << LastName << endl;
-	cout << "Your Email Id is " << Email << endl;
-	cout << "Your Password is" << endl;
-	string::iterator passIter;
-	for (passIter = Password.begin(); passIter <= Password.begin() + 3; passIter++)
-	{
-		cout << *passIter;
-	}
-	
-	cout << "******\n";
-	cout << "Visit Number : " << PersonID << endl;
-
-}
-
-
-

@@ -7,8 +7,6 @@
 class Student : public Person
 {
 public:
-	
-	
-
+	Student();
 };
 #endif

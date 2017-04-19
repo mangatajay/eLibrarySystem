@@ -6,8 +6,6 @@
 
 class Teacher : public Person
 {
-public:
-	int GetDiscount();
 
 };
 #endif
