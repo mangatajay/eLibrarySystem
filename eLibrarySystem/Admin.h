@@ -5,10 +5,16 @@
 class Admin : public Person
 {
 private:
-	char showMenu();
+	
 public:
 	Admin(string uName, string password);
+	Admin();
 	string getUName();
 	string getPassword();
+	void showMenu();
+	string createPassword()
+	{
+
+	}
 };
 #endif

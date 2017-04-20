@@ -16,3 +16,8 @@
 //	cout << "4.Return A Book " << endl;
 //	cout << "";
 //}
+
+void Teacher::showMenu()
+{
+
+}

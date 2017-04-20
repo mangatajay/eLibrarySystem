@@ -18,7 +18,7 @@
 //
 //}
 
-char Admin::showMenu()
+void Admin::showMenu()
 {
 	cout << "Hi! " << firstName << lastName;
 	cout << "\nEnter your Login details\n";
@@ -33,7 +33,7 @@ char Admin::showMenu()
 	cout << "4.\n";
 	cout << "Press The Following Options To Proceed!\n";
 	cout << "Press The Following Options To Proceed!\n";
-
+	char c;
 	
 	
 }
@@ -41,6 +41,8 @@ char Admin::showMenu()
 Admin::Admin(string uName, string password) : Person(uName, password)
 {
 }
+
+
 
 string Admin::getUName()
 {

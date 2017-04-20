@@ -12,8 +12,16 @@
 #include <iterator>
 #include <set>
 #include <fstream>
+#include "Book.h"
+#include <vector>
 
 using namespace std;
+
+vector<Book> booksArray;
+
+
+
+
 
 template<typename Out>
 void split(const string &s, char delim, Out result) {
@@ -26,6 +34,7 @@ void split(const string &s, char delim, Out result) {
 }
 
 void getAdmin();
+void getBook();
 char showInitialMenu();
 
 vector<string> split(const string &s, char delim);
@@ -35,16 +44,32 @@ Admin *admin;
 int main()
 {
 	getAdmin();
-
+	getBook();
 	char uInput = showInitialMenu();
+	Person *a;
 
 	switch (uInput)
 	{
-	case 'c':
+	case 'a':
+		a = new Student;
+		a->showMenu();
+
 		break;
+	case 'b':
+		a = new Teacher;
+		a->showMenu();
+		break;
+	case 'c':
+		a = new Admin;
+		a->showMenu();
+		break;
+
 	default:
+		cout << "Error!! Wrong Inputs.......!!! \n";
 		break;
 	}
+
+	
 	//string file = "test.txt";
 	///*ofstream out(file.c_str());
 	//string e = "gurjit";
@@ -119,6 +144,27 @@ int main()
 	//
 	//a->Menu();
 }
+void getBook() {
+	string file = "Book";
+
+	ifstream in(file.c_str());
+	string e;
+	in >> e;
+	vector<string> splittedString = split(e, '\n');
+
+	for ( int i = 0; i < splittedString.size(); i++)
+	{
+		vector<string> splitString = split(e, ':');
+		string::size_type sz;
+		Book newBook = Book(splitString[0], splitString[1], stoi(splitString[2], &sz), splitString[3]);
+		booksArray.push_back(newBook);
+	}
+	cout << e;
+
+	in.close();
+
+	admin = new Admin(splittedString[0], splittedString[1]);
+}
 
 void getAdmin() {
 	string file = "Admin";
@@ -150,6 +196,6 @@ char showInitialMenu() {
 	cout << "c.If you are a admin\n";
 	char c;
 	cin >> c;
-	return c;
+	return tolower(c);
 }
 

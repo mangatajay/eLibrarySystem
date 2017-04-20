@@ -7,7 +7,10 @@
 
 using namespace std;
 class Person
-{
+{	
+public:
+	virtual void showMenu() = 0;
+
 protected:
 	string firstName;
 	string lastName;
@@ -20,8 +23,6 @@ protected:
 	int numberOfPurchase;
 	Person(string fName, string lName, int lLogin, int vCount, string email, int id);
 	Person(string uName, string pass);
-
-	virtual char showMenu() = 0;
 private:
 	string createPassword();
 	

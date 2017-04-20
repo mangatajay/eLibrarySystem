@@ -21,3 +21,20 @@
 //{
 //	this->firstName = "";
 //}
+
+void Student::showMenu()
+{
+	cout << "Hi! " << firstName << lastName;
+	cout << "\nEnter your Login details\n";
+	cout << "Enter your User Name :\n";
+	cin >> userName;
+	cout << "Enter your Password :\n";
+	cin >> password;
+	cout << "You're Succesfully logged In ! \n Now You're working as an Admin\n";
+	cout << "1.Add a Book\n";
+	cout << "2.Renmove a Book\n";
+	cout << "3.Update a Book\n";
+	cout << "4.\n";
+	cout << "Press The Following Options To Proceed!\n";
+	cout << "Press The Following Options To Proceed!\n";
+}
