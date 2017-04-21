@@ -7,14 +7,12 @@
 class Student : public Person
 {
 private:
+	int discount;
 
 public:
-	Student();
+	Student(string fName, string lName, string uName, string password, int lLogin, int vCount, string email, int id, int discount);
 	virtual void showMenu();
-	string createPassword()
-	{
-
-	}
-
+	int getDiscount();
+	void updatePassword(string pass);
 };
 #endif

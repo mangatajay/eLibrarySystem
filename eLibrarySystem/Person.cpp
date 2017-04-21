@@ -4,12 +4,12 @@
 
 #include "Person.h"
 
-Person::Person(string fName, string lName, int lLogin, int vCount, string email, int id)
+Person::Person(string fName, string lName, string uName, string pass, int lLogin, int vCount, string email, int id)
 {
 	firstName = fName;
 	lastName = lName;
-	//password = pass;
-	//userName = uName;
+	password = pass;
+	userName = uName;
 	lastLogin = lLogin;
 	visitCount = vCount;
 	eMail = email;
@@ -28,7 +28,42 @@ Person::Person(string uName, string pass)
 	ID = 007;
 }
 
-string Person::createPassword()
+string Person::getFirstName()
 {
-	return firstName + lastName + "123";
+	return firstName;
+}
+
+string Person::getLastName()
+{
+	return lastName;
+}
+
+string Person::getEmail()
+{
+	return eMail;
+}
+
+string Person::getPassword()
+{
+	return password;
+}
+
+string Person::getUserName()
+{
+	return userName;
+}
+
+int Person::getLastLogin()
+{
+	return lastLogin;
+}
+
+int Person::getVisitCount()
+{
+	return visitCount;
+}
+
+int Person::getID()
+{
+	return ID;
 }

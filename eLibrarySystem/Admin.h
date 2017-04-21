@@ -8,13 +8,9 @@ private:
 	
 public:
 	Admin(string uName, string password);
-	Admin();
 	string getUName();
 	string getPassword();
 	void showMenu();
-	string createPassword()
-	{
 
-	}
 };
 #endif

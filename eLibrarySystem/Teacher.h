@@ -6,13 +6,12 @@
 
 class Teacher : public Person
 {
+private:
+	int discount;
 public:
-	Teacher();
+	Teacher(string fName, string lName, string uName, string password, int lLogin, int vCount, string email, int id, int discount);
 	void showMenu();
-	string createPassword()
-	{
-
-	}
-
+	int getDiscount();
+	void updatePassword(string pass);
 };
 #endif

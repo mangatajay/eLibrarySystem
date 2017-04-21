@@ -9,7 +9,14 @@ using namespace std;
 class Person
 {	
 public:
-	virtual void showMenu() = 0;
+	string getFirstName();
+	string getLastName();
+	string getEmail();
+	string getPassword();
+	string getUserName();
+	int getLastLogin();
+	int getVisitCount();
+	int getID();
 
 protected:
 	string firstName;
@@ -21,10 +28,9 @@ protected:
 	int visitCount;
 	int ID;
 	int numberOfPurchase;
-	Person(string fName, string lName, int lLogin, int vCount, string email, int id);
+	Person(string fName, string lName, string uname, string password, int lLogin, int vCount, string email, int id);
 	Person(string uName, string pass);
 private:
-	string createPassword();
 	
 
 	/*virtual void BuyBooks() ;

@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="Admin.h" />
     <ClInclude Include="Book.h" />
+    <ClInclude Include="Global.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Student.h" />
@@ -158,6 +159,7 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="eLibrarySystem.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Global.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />
